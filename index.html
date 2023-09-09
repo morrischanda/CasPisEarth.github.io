@@ -787,15 +787,50 @@ assessment</li>
 
           <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
 
-            <form id="contactform" action="https://formsubmit.io/send/morrischanda86@gmail.com" method="POST">
-    <input name="name" type="text" id="name">
-    <input name="email" type="email" id="email">
-    <textarea name="comment" id="comment" rows="3"></textarea>
+            <style>
+  #contactform {
+    width: 300px; /* Adjust the width as needed */
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
 
-    <input name="_formsubmit_id" type="text" style="display:none">
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 
-    <input value="Submit" type="submit">
-               </form>
+  textarea {
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    background-color: #007BFF; /* Change to your preferred color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3; /* Change to your preferred hover color */
+  }
+</style>
+
+<form id="contactform" action="https://formsubmit.io/send/morrischanda86@gmail.com" method="POST">
+  <input name="_redirect" type="hidden" id="name" value="https:https://github.com/morrischanda/CasPisEarth.github.io">
+  <input name="name" type="text" id="name" placeholder="Your Name">
+  <input name="email" type="email" id="email" placeholder="Your Email">
+  <textarea name="comment" id="comment" rows="3" placeholder="Your Message"></textarea>
+  <input name="_formsubmit_id" type="text" style="display:none">
+  <input value="Submit" type="submit">
+</form>
+
 
           </div>
 
